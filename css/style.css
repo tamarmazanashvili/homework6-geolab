@@ -1,0 +1,76 @@
+
+.field{
+	width: 100%;
+}
+
+.cat1{
+	position: absolute;
+	top: 500px;
+	left: 1px;
+	transform: scale(0.9);
+	animation: cat1running 2.5s infinite linear ;
+	
+
+}
+
+.cat2{
+	position: absolute;
+	top: 500px;
+	left: 300px;
+	transform: scale(0.9);
+	animation: cat2running 2.5s infinite linear;
+}
+
+.ball{
+	scale: 0.3;
+	position: absolute;
+	top: 700px;
+	left: 40%;
+	animation: ballmoving 2.5s infinite linear;
+}
+
+
+@keyframes ballmoving{
+	0% {left: 500px; transform:  rotate(0deg);}
+	15% {left: 600px; transform:  rotate(45deg);}
+	30% {left: 700px; transform:  rotate(90deg);}
+	45% {left: 800px; transform:  rotate(135deg);}
+	60% {left: 900px; transform:  rotate(180deg);}
+	75% {left: 1000px; transform:  rotate(225deg);}
+	90% {left: 1100px; transform:  rotate(270deg);}
+	100% {left: 1200px; transform:  rotate(315deg);}
+		
+}
+
+.cat1:hover{
+	opacity: 0;
+}
+
+@keyframes cat1running{
+	0% {left: 1px; opacity: 1}
+	10% {left: 75px; opacity: 0}
+	20% {left: 150px; opacity: 1}
+	30% {left: 250px;  opacity: 0}
+	40% {left: 350px; opacity: 1}
+	50% {left: 450px; opacity: 0 }
+	60% {left: 550px; opacity: 1}
+	70% {left: 650px;opacity: 0 }
+	80% {left: 750px; opacity: 1}
+	90% {left: 850px;  opacity: 0}
+	100% {left: 950px; opacity: 1}
+}
+
+@keyframes cat2running{
+	0% {left: 1px; opacity: 0}
+	10% {left: 75px;opacity: 1}
+	20% {left: 150px; opacity: 0}
+	30% {left: 250px; opacity: 1}
+	40% {left: 350px; opacity: 0}
+	50% {left: 450px; opacity: 1}
+	60% {left: 550px; opacity: 0}
+	70% {left: 650px; opacity: 1}
+	80% {left: 750px; opacity: 0}
+	90% {left: 850px; opacity: 1}
+	100% {left: 950px; opacity: 0}
+}
+
